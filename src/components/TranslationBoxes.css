@@ -1,0 +1,58 @@
+.translation-boxes {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .translation-box {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .box-title {
+    font-weight: 600;
+    color: #1a6546;
+  }
+  
+  .box-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .box-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  
+  .box-actions button:hover {
+    opacity: 1;
+  }
+  
+  .translation-box textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: vertical;
+    font-family: inherit;
+  }
+  
+  @media (max-width: 768px) {
+    .translation-boxes {
+      flex-direction: column;
+    }
+  }
